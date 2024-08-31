@@ -1,4 +1,4 @@
-size = 22
+size = 2001
 offset = size // 2
 
 a_x1, a_y1, a_x2, a_y2 = map(int, input().split())
