@@ -23,4 +23,9 @@ for i in range(size):
             x_points.append(i)
             y_points.append(j)
 
-print((max(x_points) - min(x_points) + 1) * (max(y_points) - min(y_points) + 1))
+if not x_points:
+    print(0)
+elif not y_points:
+    print(0)
+else:
+    print((max(x_points) - min(x_points) + 1) * (max(y_points) - min(y_points) + 1))
