@@ -6,15 +6,13 @@ b_x1, b_y1, b_x2, b_y2 = map(int, input().split())
 
 matrix = [[0] * size for _ in range(size)]
 
-for i in range(a_x1, a_x2 + 1):
-    for j in range(a_y1, a_y2 + 1):
+for i in range(a_x1, a_x2):
+    for j in range(a_y1, a_y2):
         matrix[i + offset][j + offset] = 1
 
-for i in range(b_x1, b_x2 + 1):
-    for j in range(b_y1, b_y2 + 1):
+for i in range(b_x1, b_x2):
+    for j in range(b_y1, b_y2):
         matrix[i + offset][j + offset] = 0
-
-min_x, min_y, max_x, max_y = size + 1, size + 1, -1, -1
 
 x_points = []
 y_points = []
@@ -25,4 +23,4 @@ for i in range(size):
             x_points.append(i)
             y_points.append(j)
 
-print((max(x_points) - min(x_points)) * (max(y_points) - min(y_points)))
+print((max(x_points) - min(x_points) + 1) * (max(y_points) - min(y_points) + 1))
