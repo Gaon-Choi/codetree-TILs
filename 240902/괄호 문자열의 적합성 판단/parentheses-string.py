@@ -8,6 +8,9 @@ for q in query:
     else:
         if len(brace_stack) > 0 and brace_stack[-1] == "(":
             brace_stack.pop()
+        else:
+            print("No")
+            exit(0)
 
 if not brace_stack:
     print("Yes")
