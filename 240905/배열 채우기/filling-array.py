@@ -1,15 +1,12 @@
 arr = list(map(int, input().split()))
 
 temp = []
-original_length = arr
-cnt = 1
 
-while (True):
-    if (len(arr) >= 1 and arr[0] == 0) or original_length == cnt:
+for i in range(len(arr)):
+    if arr[i] == 0:
         break
     else:
-        temp.append(arr.pop(0))
-        cnt += 1
+        temp.append(arr[i])
 
 temp.reverse()
 
