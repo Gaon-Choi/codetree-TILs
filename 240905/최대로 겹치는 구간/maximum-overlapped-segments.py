@@ -7,6 +7,8 @@ for _ in range(N):
     for i in range(start - 1 , end):
         array[i + 100] += 1
 
-max_dupl = array.count(max(array))
+max_dupl = max(array)
 
-print(array.count(max_dupl))
+# print(array)
+
+print(array.count(max_dupl) + 1)
