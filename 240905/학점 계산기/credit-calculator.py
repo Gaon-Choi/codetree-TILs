@@ -1,6 +1,6 @@
 N = int(input())
 
-avg = sum(list(map(float, input().split()))) / 4
+avg = sum(list(map(float, input().split()))) / N
 
 print(round(avg, 1))
 
