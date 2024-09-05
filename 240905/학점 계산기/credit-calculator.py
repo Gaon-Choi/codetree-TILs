@@ -2,7 +2,7 @@ N = int(input())
 
 avg = sum(list(map(float, input().split()))) / 4
 
-print(format(avg, ".1f"))
+print(round(avg, 1))
 
 if avg >= 4.0:
     print("Perfect")
