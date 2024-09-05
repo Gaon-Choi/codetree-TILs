@@ -22,11 +22,7 @@ for _ in range(N):
                 location[curr_x] += 1
             else:
                 location[curr_x] = 1
+                
+dist_values = location.values()
 
-count = 0
-
-for e in location:
-    if location[e] > 1:
-        count += 1
-
-print(count)
+print(sum(x >= 2 for x in dist_values))
