@@ -1,0 +1,1 @@
+print(format(sum(list(map(float, input().split()))) / 8, ".1f"))
