@@ -7,7 +7,7 @@ N = int(input())
 
 for _ in range(N):
     s, e = map(int, input().split())
-    for i in range(s, e + 1):
+    for i in range(s, e):
         arr[i] += 1
 
-print(max(arr))
+print(max(arr) + 1)
