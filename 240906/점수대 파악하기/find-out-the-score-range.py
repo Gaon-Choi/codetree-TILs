@@ -3,6 +3,8 @@ result = [0] * 11
 arr = list(map(int, input().split()))
 
 for elem in arr:
+    if elem == 0:
+        break
     if elem // 10 > 0:
         result[elem // 10] += 1
 
