@@ -37,7 +37,7 @@ size_offset = len(a_move) - len(b_move)
 if size_offset > 0:
     b_move.extend([b_move[-1]] * size_offset)
 elif size_offset < 0:
-    a_move.extend([a_move[-1]] * size_offset)
+    a_move.extend([a_move[-1]] * abs(size_offset))
 
 result = 0
 
@@ -45,4 +45,4 @@ for i in range(len(a_move) - 1):
     if a_move[i+1] == b_move[i+1] and a_move[i] != b_move[i]:
         result += 1
 
-print(result + 1)
+print(result)
