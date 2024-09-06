@@ -3,7 +3,7 @@ N, M, K = map(int, input().split())
 student = [0] * N
 punish = []
 
-for _ in range(N):
+for _ in range(M):
     punish.append(int(input()))
 
 for p in punish:
