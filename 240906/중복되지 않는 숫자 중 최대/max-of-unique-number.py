@@ -9,7 +9,7 @@ for elem in arr:
     else:
         tmp.append(elem)
 
-if not elem:
+if not tmp:
     print(-1)
 else:
     print(max(tmp))
