@@ -8,6 +8,7 @@ for _ in range(M):
 
 for p in punish:
     student[p-1] += 1
+    
     if K in student:
         print(student.index(K) + 1)
         break
