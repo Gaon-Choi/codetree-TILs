@@ -3,8 +3,8 @@ a, b = map(int, input().split())
 remainder = [0] * b
 
 while (a > 1):
-    a = (a // b)
     remainder[(a % b)] += 1
+    a = (a // b)
 
 result = 0
 
