@@ -8,7 +8,7 @@ while (a > 1):
 
 result = 0
 
-for i, v in enumerate(remainder):
+for v in remainder:
     result += v ** 2
 
 print(result)
