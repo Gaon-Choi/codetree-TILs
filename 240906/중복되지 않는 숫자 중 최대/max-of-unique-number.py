@@ -4,9 +4,7 @@ arr = list(map(int, input().split()))
 tmp = []
 
 for elem in arr:
-    if elem in tmp:
-        tmp.remove(elem)
-    else:
+    if arr.count(elem) == 1:
         tmp.append(elem)
 
 if not tmp:
