@@ -11,3 +11,5 @@ for p in punish:
     if 0 in student:
         print(student.index(0) + 1)
         break
+
+print(-1)
