@@ -1,6 +1,6 @@
 def check_location(x: int, y: int, size: int, arr):
     if x >= 0 and x < size and y >= 0 and y < size:
-        if arr[i][j] == 1:
+        if arr[x][y] == 1:
             return 1
         else:
             return 0
