@@ -12,7 +12,7 @@ day_2 = sum(month[0 : m2]) + d2
 
 result = 0
 
-for i in range(day_1, day_2 + 1):
+for i in range(day_1, day_2):
     if i % 7 == day:
         result += 1
 
