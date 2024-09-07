@@ -3,9 +3,7 @@ def dfs(vertex):
     for curr_v in graph[vertex]:
         if not visited[curr_v]:
             visited[curr_v] = True
-            return 1 + dfs(curr_v)
-        else:
-            return 0
+            dfs(curr_v)
 
 N, M = map(int, input().split())
 
@@ -22,4 +20,6 @@ for _ in range(M):
     graph[start].append(end)
     graph[end].append(start)
 
-print(dfs(1))
+dfs(1)
+
+print(visited.count(True) - 1)
