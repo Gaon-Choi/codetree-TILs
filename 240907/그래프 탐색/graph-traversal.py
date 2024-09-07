@@ -22,4 +22,7 @@ for _ in range(M):
 
 dfs(1)
 
-print(visited.count(True) - 1)
+if visited.count(True) == 0:
+    print(0)
+else:
+    print(visited.count(True) - 1)
