@@ -14,7 +14,6 @@ for t, q in enumerate(queries):
 
         if r == 0 and c == 0:
             print(t + 1)
-            break
             exit(0)
 
     elif q == "R":
