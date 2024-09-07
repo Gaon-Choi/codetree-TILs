@@ -15,11 +15,11 @@ for t, q in enumerate(queries):
         if r == 0 and c == 0:
             print(t + 1)
             break
+            exit(0)
 
     elif q == "R":
         offset += 1
     else:
         offset -= 1
 
-if t == len(queries) - 1:
-    print(-1)
+print(-1)
