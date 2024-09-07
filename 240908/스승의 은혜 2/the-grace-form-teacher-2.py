@@ -1,3 +1,5 @@
+import copy
+
 N, B = map(int, input().split())
 
 presents = []
@@ -5,18 +7,20 @@ presents = []
 for _ in range(N):
     presents.append(int(input()))
 
-presents.sort()
-
 results = []
 
 for i in range(len(presents)):
+    temp_present = copy.deepcopy(presents)
+    temp_present[i] = temp_present[i] // 2
+    temp_present.sort()
+
     total_budget = 0
-    for k in range(len(presents)):
-        d_budget = (presents[k] // 2) if k == i else presents[k]
-        if total_budget + d_budget > B:
+    
+    for k in range(len(temp_present)):
+        if total_budget + temp_present[k] > B:
             results.append(k)
             break
         else:
-            total_budget += d_budget
+            total_budget += temp_present[k]
 
 print(max(results))
