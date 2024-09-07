@@ -24,5 +24,10 @@ for _ in range(N):
                 location[curr_x] = 1
                 
 dist_values = location.values()
-print(dist_values)
-print(sum(x >= 2 for x in dist_values))
+result = 0
+
+for elem in dist_values:
+    if elem >= 2:
+        result += 1
+
+print(result)
