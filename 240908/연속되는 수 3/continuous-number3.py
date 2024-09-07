@@ -16,8 +16,6 @@ prev = None
 tmp_list = []
 result = []
 
-print(arr)
-
 for elem in arr:
     if (len(tmp_list) > 0) and (tmp_list[-1] * elem < 0):
         result.append(len(tmp_list))
