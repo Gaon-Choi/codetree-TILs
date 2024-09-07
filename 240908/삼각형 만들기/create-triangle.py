@@ -3,8 +3,14 @@ def is_perpendicular(p1, p2, p3):
     s2 = (p2[0] - p3[0]) ** 2 + (p2[1] - p3[1]) ** 2
     s3 = (p3[0] - p1[0]) ** 2 + (p3[1] - p1[1]) ** 2
 
+    set1 = set([p1[0], p2[0], p3[0]])
+    set2 = set([p1[1], p2[1], p3[1]])
+
     if (s3 == s1 + s2) or (s1 == s2 + s3) or (s2 == s1 + s3):
-        return True
+        if len(set1) == 2 and len(set2) == 2:
+            return True
+        else:
+            return False
     else:
         return False
 
