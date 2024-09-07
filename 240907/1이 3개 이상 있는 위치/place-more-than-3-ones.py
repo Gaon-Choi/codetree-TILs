@@ -19,7 +19,7 @@ for i in range(N):
     for j in range(N):
         count = check_location(i-1, j, N, matrix) + check_location(i+1, j, N, matrix) + check_location(i, j-1, N, matrix) + check_location(i, j+1, N, matrix)
 
-        if count == 3:
+        if count >= 3:
             result += 1
 
 print(result)
