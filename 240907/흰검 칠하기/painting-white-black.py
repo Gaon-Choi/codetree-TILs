@@ -18,7 +18,7 @@ class Point:
 
 N = int(input())
 
-arr = [Point() for _ in range(10)]
+arr = [Point() for _ in range(100000)]
 
 offset = len(arr) // 2
 
