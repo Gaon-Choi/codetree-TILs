@@ -12,7 +12,7 @@ r, c, d = input().split()
 r = int(r); c = int(c)
 
 for _ in range(t):
-    if  (1 <= r + direction[d][0]) and (r + direction[d][0] < n) and  (1 <= c + direction[d][1]) and (c + direction[d][1] < n):
+    if  (1 <= r + direction[d][0]) and (r + direction[d][0] <= n) and  (1 <= c + direction[d][1]) and (c + direction[d][1] <= n):
         r += direction[d][0]
         c += direction[d][1]
     else:
