@@ -1,4 +1,6 @@
-month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+is_leap_year = True
+
+month = [0, 31, 28 + (1 if is_leap_year else 0), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 weekday = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
