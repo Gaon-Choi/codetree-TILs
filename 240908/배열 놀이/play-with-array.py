@@ -19,3 +19,5 @@ for _ in range(q):
     elif query[0] == 3:
         for elem in arr[query[1]-1:query[2]]:
             print(elem, end=" ")
+        
+        print()
