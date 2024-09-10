@@ -28,7 +28,7 @@ for _ in range(n-1):
     tree[start].append((end, cost))
     tree[end].append((start, cost))
 
-mx_dist, f_node = dfs(1, 0)
+mx_dist, f_node = dfs(tree[1][0], 0)
 
 # 방문 정보 초기화
 visited = [False] * (n + 1)
