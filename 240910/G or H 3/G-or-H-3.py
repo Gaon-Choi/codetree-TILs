@@ -1,6 +1,6 @@
 N, K = map(int, input().split())
 
-max_size = 100
+max_size = 10000
 
 arr = [0] * (max_size + 1)
 
