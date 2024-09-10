@@ -27,4 +27,10 @@ for _ in range(n-1):
 
 mx_dist, f_node = dfs(1, 0)
 
-print(dfs(f_node, mx_dist)[0])
+# 방문 정보 초기화
+visited = [False] * (n + 1)
+
+visited[f_node] = True
+diameter, _ = dfs(f_node, 0)
+
+print(diameter)
