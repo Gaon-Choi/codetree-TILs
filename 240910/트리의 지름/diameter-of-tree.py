@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(10**3)
+
 def dfs(vertex, curr_distance = 0):
 
     farthest_node = vertex
