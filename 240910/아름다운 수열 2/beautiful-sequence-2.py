@@ -7,7 +7,7 @@ def is_beautiful_array(a: list, b: list):
 N, M = map(int, input().split())
 
 A = list(map(int, input().split()))
-B = list(map(int, input().split()))
+B = sorted(list(map(int, input().split())))
 
 cnt = 0
 
