@@ -12,7 +12,4 @@ for _ in range(N):
         counts.append(len(arr))
         arr = [elem]
 
-if len(counts) == 0:
-    print(1)
-else:
-    print(max(counts))
+print(max(counts))
