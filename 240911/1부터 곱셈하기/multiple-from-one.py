@@ -1,8 +1,8 @@
 N = int(input())
 
-total = 0
+total = 1
 
-for i in range(1, N + 1):
+for i in range(1, 11):
     total *= i
 
     if total >= N:
