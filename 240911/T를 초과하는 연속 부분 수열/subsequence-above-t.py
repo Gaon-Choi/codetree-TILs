@@ -18,7 +18,10 @@ for i in range(n):
         counts.append(len(temp_arr))
         temp_arr = [elem]
 
-if len(temp_arr) > 0:
+if len(temp_arr) > 1:
     counts.append(len(temp_arr))
 
-print(max(counts))
+if len(counts) > 0:
+    print(max(counts))
+else:
+    print(0)
