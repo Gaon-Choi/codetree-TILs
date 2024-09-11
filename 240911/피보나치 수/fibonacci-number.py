@@ -1,11 +1,11 @@
 N = int(input())
 
-arr = []
+arr = [0] * 45
 
 arr.append(1)
 arr.append(1)
 
-for i in range(2, N + 1):
+for i in range(2, 45):
     arr[i] = arr[i-1] + arr[i-2]
 
 print(arr[N - 1])
