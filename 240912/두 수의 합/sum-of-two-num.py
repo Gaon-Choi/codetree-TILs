@@ -2,13 +2,14 @@ n, k = map(int, input().split())
 
 hashMap = dict()
 
+for i in range(1, k):
+    hashMap["{a}-{b}".format(a=i, b=k-i)] = 0
+
 arr = list(map(int, input().split()))
 
 for i in range(n):
     for j in range(i+1, n):
-        if (arr[i] + arr[j]) in hashMap:
-            hashMap[arr[i] + arr[j]] += 1
-        else:
-            hashMap[arr[i] + arr[j]] = 1
+        if (str(arr[i]) + "-"+ str(arr[j])) in hashMap:
+            hashMap[str(arr[i]) + "-"+ str(arr[j])] += 1
 
-print(hashMap[k])
+print(sum(hashMap.values()))
