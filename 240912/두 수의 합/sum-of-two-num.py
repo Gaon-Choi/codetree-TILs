@@ -9,8 +9,14 @@ for elem in arr:
     else:
         hashMap[elem] = 1
 
+arr = list(set(arr))
 
+result = 0
 
+for elem in arr:
+    complement = k - elem
+    if complement in hashMap:
+        result += hashMap[complement]
+    #result += hashMap[complement] * hashMap[elem]
 
-
-print(sum(hashMap.values()))
+print(result // 2)
