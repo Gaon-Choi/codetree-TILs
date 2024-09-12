@@ -10,18 +10,20 @@ for _ in range(N):
 
     if direction == "L":
         for __ in range(dist):
-            curr_x -= 1
             if curr_x in location:
                 location[curr_x] += 1
             else:
                 location[curr_x] = 1
+            curr_x -= 1
+            
     else:
         for __ in range(dist):
-            curr_x += 1
+            
             if curr_x in location:
                 location[curr_x] += 1
             else:
                 location[curr_x] = 1
+            curr_x += 1
                 
 dist_values = location.values()
 result = 0
