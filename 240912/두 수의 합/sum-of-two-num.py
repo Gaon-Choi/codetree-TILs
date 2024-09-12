@@ -3,13 +3,15 @@ arr = list(map(int, input().split()))
 
 hashMap = dict()
 
+
+
 for elem in arr:
     if elem in hashMap:
         hashMap[elem] += 1
     else:
         hashMap[elem] = 1
 
-arr = list(set(arr))
+# arr = list(set(arr))
 
 result = 0
 
