@@ -1,6 +1,6 @@
 n1 = 1920; n2 = 2880
 
-a, b = map(int, input())
+a, b = map(int, input().split())
 
 isExists = False
 
