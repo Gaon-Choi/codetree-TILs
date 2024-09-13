@@ -17,8 +17,9 @@ result = 0
 
 for elem in arr:
     complement = k - elem
+    # 원소가 중복될 수 있으므로 탐색 시마다 개수를 -1 해줘야함
     hashMap[elem] -= 1
-    
+
     if complement in hashMap:
         result += hashMap[complement]
 
