@@ -11,7 +11,7 @@ money = k
 result = 0
 
 for elem in coins:
-    result += money // k
-    money = money % k
+    result += money // elem
+    money = money % elem
 
 print(result)
