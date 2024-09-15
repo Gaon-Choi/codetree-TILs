@@ -3,7 +3,7 @@ n = int(input())
 arr = []
 
 for _ in range(n):
-    arr.append(list(map(int, input().split())))
+    arr.append(list(map(int, input().split()))[-1::-1])
 
 matrix = [[0] * n for _ in range(n)]
 
