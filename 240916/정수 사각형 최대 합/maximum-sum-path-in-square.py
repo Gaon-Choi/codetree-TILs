@@ -12,10 +12,10 @@ matrix[0][0] = arr[0][0]
 
 for i in range(1, n):
     matrix[i][0] = matrix[i-1][0] + arr[i][0]
-    #matrix[i][i] = matrix[i-1][i-1] + arr[i][i]
+    matrix[0][i] = matrix[0][i-1] + arr[0][i]
 
 for i in range(n):
-    for j in range(i + 1):
+    for j in range(n):
         if matrix[i][j] == 0:
             matrix[i][j] = max(matrix[i-1][j], matrix[i][j-1]) + arr[i][j]
 
