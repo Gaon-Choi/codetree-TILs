@@ -34,7 +34,7 @@ for _ in range(n):
     if query[0] == "push":
         heap.push(int(query[1]))
     elif query[0] == "top":
-        print(heap.top())
+        print(-heap.top())
     elif query[0] == "size":
         print(heap.size())
     elif query[0] == "pop":
