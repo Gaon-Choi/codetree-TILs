@@ -14,11 +14,11 @@ for _ in range(m):
             pointer -= 1
     
     elif query[0] == "R":
-        if 0 <= pointer and pointer < len(linked_list) - 1:
+        if 0 <= pointer and pointer < len(linked_list):
             pointer += 1
 
     elif query[0] == "D":
-        if pointer == len(linked_list) - 1:
+        if pointer == len(linked_list):
             continue
         else:
             linked_list.pop(pointer + 1)
