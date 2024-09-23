@@ -25,6 +25,8 @@ for _ in range(m):
 
     else:
         linked_list.insert(pointer + 1, query[1])
+        if 0 <= pointer and pointer < len(linked_list):
+            pointer += 1
 
 for elem in linked_list:
     print(elem, end="")
