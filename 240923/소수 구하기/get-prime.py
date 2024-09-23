@@ -6,6 +6,6 @@ def is_prime(n: int):
 
 n = int(input())
 
-for num in range(1, n + 1):
+for num in range(2, n + 1):
     if is_prime(num):
         print(num, end=" ")
