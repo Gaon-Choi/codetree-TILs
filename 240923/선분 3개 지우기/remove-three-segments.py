@@ -20,6 +20,10 @@ for i in range(n):
 
             is_ = True
 
+            if len(except_three) == 1:
+                total_number += 1
+                break
+
             for p in range(len(except_three) - 1):
                 if is_intersection(except_three[p], except_three[p + 1]):
                     is_ = False
