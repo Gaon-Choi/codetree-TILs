@@ -22,7 +22,7 @@ for i in range(n):
 
             if len(except_three) == 1:
                 total_number += 1
-                break
+                continue
 
             for p in range(len(except_three) - 1):
                 if is_intersection(except_three[p], except_three[p + 1]):
