@@ -16,7 +16,7 @@ for _ in range(n):
 for i in range(n):
     for j in range(i, n):
         for k in range(j, n):
-            except_three = [elem for idx, elem in enumerate(line_list) if idx != i and idx != j and idx != k]
+            except_three = [elem for idx, elem in enumerate(line_list) if ((idx != i) and (idx != j) and (idx != k))]
 
             is_ = True
 
