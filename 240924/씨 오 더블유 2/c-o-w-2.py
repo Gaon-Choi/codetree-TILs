@@ -1,8 +1,18 @@
 N = int(input())
 text = input()
 
-a1 = text.count("C")
-a2 = text.count("O")
-a3 = text.count("W")
+cnt = 0
 
-print(a1 * a2 * a3)
+for i in range(len(text)):
+    if text[i] == "C":
+        text_1 = text[i+1:]
+
+        for j in range(len(text_1)):
+            if text_1[j] == "O":
+                text_2 = text[j+1:]
+
+                for k in range(len(text_2)):
+                    if text_2[k] == "W":
+                        cnt += 1
+
+print(cnt)
