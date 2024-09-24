@@ -3,7 +3,7 @@ text = input()
 
 cnt = 0
 
-for i in range(len(text)):
+for i in range(len(text) - 2):
     if text[i] == "C":
         text_1 = text[i+1:]
 
