@@ -6,9 +6,9 @@ answer = dict()
 
 for i in range(n):
     for j in range(i + 1, n):
-        if (arr[i] + arr[j]) / 2 in answer:
-            answer[(arr[i] + arr[j]) / 2] += 1
+        if (arr[i] + arr[j]) in answer:
+            answer[(arr[i] + arr[j])] += 1
         else:
-            answer[(arr[i] + arr[j]) / 2] = 1
+            answer[(arr[i] + arr[j])] = 1
 
 print(max(answer.values()))
