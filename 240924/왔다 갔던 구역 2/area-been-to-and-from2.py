@@ -4,7 +4,7 @@ arr = [0] * (2 * size + 1)
 
 n = int(input())
 
-curr = 0
+curr = size
 
 for _ in range(n):
     loc, direction = input().split()
