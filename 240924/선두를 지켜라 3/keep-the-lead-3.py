@@ -25,11 +25,11 @@ for _ in range(M):
 temp = []
 
 for i in range(min(len(arr_a), len(arr_b))):
-    winner = 1 if arr_a[i] > arr_b[i] else -1
+    winner = 1 if arr_a[i] > arr_b[i] else 2 if arr_a[i] == arr_b[i] else 3
 
     if temp and temp[-1] != winner:
         temp.append(winner)
     elif not temp:
         temp.append(winner)
 
-print(len(temp) + 2)
+print(len(temp))
