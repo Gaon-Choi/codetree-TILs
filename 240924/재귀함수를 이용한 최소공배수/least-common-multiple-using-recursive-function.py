@@ -9,6 +9,8 @@ def lcm(a, b):
 def lcm_recursive(num_list: list):
     if len(num_list) == 2:
         return lcm(num_list[0], num_list[1])
+    elif len(num_list) == 1:
+        return num_list[0]
     else:
         return lcm(num_list[0], lcm_recursive(num_list[1:]))
 
