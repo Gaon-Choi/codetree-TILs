@@ -12,11 +12,12 @@ for _ in range(n):
 
     if direction == "R":
         for _ in range(loc):
-            arr[curr + 1] += 1
             curr += 1
+            arr[curr] += 1
     else:
         for _ in range(loc):
-            arr[curr - 1] += 1
             curr -= 1
+            arr[curr] += 1
+            
 
 print(len(list(filter(lambda x: x >= 2, arr))))
