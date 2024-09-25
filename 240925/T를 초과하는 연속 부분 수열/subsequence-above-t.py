@@ -13,9 +13,9 @@ temp = []
 for i in range(n):
     for j in range(i+1, n):
         if is_all_more_than_t(arr[i:j+1], t):
-            temp.append(j-i)
+            temp.append(j-i + 1)
 
 if temp:
-    print(max(temp) + 1)
+    print(max(temp))
 else:
     print(0)
