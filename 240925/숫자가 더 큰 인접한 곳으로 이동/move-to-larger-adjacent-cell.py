@@ -8,7 +8,7 @@ def find_direction(temp_dirr):
         if value != -1:
             return idx
 
-direction = [[-1, 0], [+1, 0], [0, +1], [0, -1]]
+direction = [[-1, 0], [+1, 0], [0, -1], [0, +1]]
 
 n, r, c = map(int, input().split())
 r -= 1; c -= 1
@@ -25,8 +25,8 @@ while True:
 
     temp.append(matrix[r-1][c] if is_reachable(r-1,c,n) and matrix[r-1][c] > matrix[r][c] else -1)
     temp.append(matrix[r+1][c] if is_reachable(r+1,c,n) and matrix[r+1][c] > matrix[r][c] else -1)
-    temp.append(matrix[r][c+1] if is_reachable(r,c+1,n) and matrix[r][c+1] > matrix[r][c] else -1)
     temp.append(matrix[r][c-1] if is_reachable(r,c-1,n) and matrix[r][c-1] > matrix[r][c] else -1)
+    temp.append(matrix[r][c+1] if is_reachable(r,c+1,n) and matrix[r][c+1] > matrix[r][c] else -1)
 
     if max(temp) == -1:
         break
