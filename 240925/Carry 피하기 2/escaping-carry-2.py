@@ -9,7 +9,7 @@ def is_exists_carry(num1, num2, num3):
     n2 = '0' * (max_size - len(n2)) + n2
     n3 = '0' * (max_size - len(n3)) + n3
 
-    for i in range(max_size):
+    for i in range(max_size -1, -1, -1):
         if int(n1[i]) + int(n2[i]) + int(n3[i]) > 10:
             return True
     
