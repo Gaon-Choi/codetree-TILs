@@ -1,24 +1,25 @@
-import copy
+import math
 
 n = int(input())
 
 arr = list(map(int, input().split()))
-temp = []
 
+min_diff = math.inf
 for i in range(n):
+    arr[i] *= 2
+
     for j in range(n):
-        diffsum = 0
+        remaining_arr = []
+        for k in range(n):
+            if k != j:
+                remaining_arr.append(arr[k])
 
-        temp_arr = copy.deepcopy(arr)
+        sum_diff = 0
+        for k in range(n - 2):
+            sum_diff += abs(remaining_arr[k + 1] - remaining_arr[k])
 
-        temp_arr[i] *= 2
+        min_diff = min(min_diff, sum_diff)
 
-        temp_arr.pop(j)
+    arr[i] //= 2
 
-        for i in range(len(temp_arr) - 1):
-            diffsum += abs(temp_arr[i] - temp_arr[i+1])
-
-        
-        temp.append(diffsum)
-
-print(min(temp))
+print(min_diff)
