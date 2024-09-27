@@ -10,7 +10,7 @@ for _ in range(n):
 
 answer = -1
 
-for x in range(1, 15):
+for x in range(1, 10001):
     num = x
 
     is_flag = False
