@@ -12,7 +12,9 @@ answer = -1
 
 for x in range(1, 15):
     num = x
+
     is_flag = False
+
     for i in range(n):
         num *= 2
         if min_arr[i] <= num and num <= max_arr[i]:
@@ -21,10 +23,8 @@ for x in range(1, 15):
             is_flag = True
             break
 
-    if is_flag and (answer > -1):
-        break
-        
-    elif not is_flag:
+    if not is_flag:
         answer = x
+        break
 
 print(answer)
