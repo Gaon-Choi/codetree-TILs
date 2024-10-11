@@ -20,7 +20,7 @@ seats = list(map(int, list(input())))
 answer_list = []
 
 for seat1 in range(N):
-    for seat2 in range(seat1, N):
+    for seat2 in range(seat1 + 1, N):
 
         if seats[seat1] == 0 and seats[seat2] == 0:
             seats[seat1] = 1
