@@ -2,7 +2,7 @@ def is_bombable(arr, idx):
     start = max(0, idx - K)
     end = min(N-1, idx + K)
 
-    if arr[idx] in arr[start:end+1]:
+    if arr[idx] in arr[start:idx] + arr[idx+1:end]:
         return True
     return False
 
